@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Code Editor with Syntax Highlighting
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple code editor with syntax highlighting using React, Prism.js. The editor supports JSX syntax highlighting and uses a dark theme from Prism.js.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Syntax highlighting for JSX, JavaScript, HTML, and CSS
+- Responsive design
+- Dark theme
+- Real-time code editing and highlighting
 
-### `npm start`
+## Live Demo
+`https://react-code-editor-pearl.vercel.app/`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run this project locally, follow these steps:
 
-### `npm test`
+1. **Clone the repository:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone https://github.com/Amansinghfbd/react-code-editor.git
+    cd code-editor
+    ```
 
-### `npm run build`
+2. **Install dependencies:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Run the development server:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm start
+    ```
 
-### `npm run eject`
+4. Open your browser and navigate to `http://localhost:3000` to see the code editor in action.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You can start editing the code in the textarea. The syntax highlighting will be applied in real-time.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `src/App.jsx`: Main component rendering the `CodeEditor`.
+- `src/CodeEditor.jsx`: Component containing the code editor with syntax highlighting.
+- `src/App.css`: CSS for styling the components.
+- `src/index.jsx`: Entry point of the React application.
 
-## Learn More
+## Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React**: A JavaScript library for building user interfaces.
+- **Prism.js**: A lightweight, extensible syntax highlighter.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Adding More Languages
 
-### Code Splitting
+To add more languages for syntax highlighting, you need to import the respective components from Prism.js. For example:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```javascript
+import 'prismjs/components/prism-python';
+import 'prismjs/components/prism-java';
+```
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+If you have any questions or feedback, feel free to contact me at [amansinghfbd100@gmail.com].
