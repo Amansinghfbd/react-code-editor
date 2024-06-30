@@ -10,7 +10,7 @@ This project is a simple code editor with syntax highlighting using React, Prism
 - Real-time code editing and highlighting
 
 ## Live Demo
-`https://react-code-editor-pearl.vercel.app/`
+[https://react-code-editor-pearl.vercel.app/]
 
 ## Installation
 
